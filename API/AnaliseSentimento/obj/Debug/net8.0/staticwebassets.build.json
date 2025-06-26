@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LvFeYZVUKKIWGwqH3sxfah2rN7XbpQ9lJfpAQvJWCA8=",
+  "Source": "AnaliseSentimento",
+  "BasePath": "_content/AnaliseSentimento",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
