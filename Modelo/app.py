@@ -1,13 +1,11 @@
 import streamlit as st
 import joblib
 
-# Carregar modelo e vetor
 model = joblib.load("ModeloTreinado/modelo_sentimento.joblib")
 vectorizer = joblib.load("ModeloTreinado/vectorizer.joblib")
 label_map = joblib.load("ModeloTreinado/label_map.joblib")
 inv_label_map = {v: k for k, v in label_map.items()}
 
-# Título com emoji centralizado e espaçamento
 st.markdown("""
     <div style='text-align: center; margin-top: 40px; margin-bottom: 10px;'>
         <h1 style='font-size: 2.8rem;'>🧠 Analisador de FeedBacks</h1>
@@ -31,7 +29,6 @@ if enviado:
         pred = model.predict(vetor)[0]
         sentimento = inv_label_map[pred]
 
-        # Cores e emojis por sentimento
         emojis = {"positivo": "😊", "negativo": "😠", "neutro": "😐"}
         cores = {"positivo": "#27ae60", "negativo": "#e74c3c", "neutro": "#7f8c8d"}
         explicacoes = {
