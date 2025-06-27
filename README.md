@@ -62,7 +62,6 @@ AnalisadorFeedbacks/
 │ ├── PredicaoModelo.py
 │ └── modelo_sentimento.joblib
 |  └── app.py 
-│
 ```
 
 ---
