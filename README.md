@@ -1,5 +1,5 @@
 # 🧠 Analisador de Feedbacks
-<img src="https://raw.githubusercontent.com/VictorBrasileiroo/AnaliseFeedbacks/main/banner.png" alt="Banner do Projeto Analisador de Feedbacks" style="width: 100%; max-width: 800px; height: auto;" />
+<img src="https://raw.githubusercontent.com/VictorBrasileiroo/AnalisadorFeedBack/main/banner.png" alt="Banner do Projeto Analisador de Feedbacks" style="width: 100%; max-width: 800px; height: auto;" />
 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-Minimal%20API-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
