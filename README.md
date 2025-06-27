@@ -46,20 +46,15 @@ Conta com um sistema inteligente que re-treina o modelo e atualiza os dados peri
 ```bash
 AnalisadorFeedbacks/
 │
-├── API/ # Projeto ASP.NET Core Minimal API
-│ └── Controllers, Program.cs, etc.
+├── API/
+│ └── Program.cs, etc.
 │
-├── Modelo/ # Scripts de treino e predição do modelo
+├── Modelo/
 │ ├── TreinamentoModelo.py
 │ ├── PredicaoModelo.py
-│ └── modelo_sentimento.joblib (gerado)
+│ └── modelo_sentimento.joblib
+|  └── app.py 
 │
-├── Interface/ # Interface com Streamlit
-│ └── app.py
-│
-├── Dados/ # (Opcional) Dados usados no treinamento
-│
-├── README.md
 ```
 
 ---
@@ -88,12 +83,6 @@ O sistema pode ser configurado para:
 - Buscar periodicamente feedbacks com sentimentos nulos
 - Predizer e atualizar esses dados no banco
 - Re-treinar o modelo para mantê-lo atualizado
-
----
-
-## ⚖️ Licença
-
-Este projeto está sob a licença MIT - veja o arquivo LICENSE para detalhes.
 
 ---
 
