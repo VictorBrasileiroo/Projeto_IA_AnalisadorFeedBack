@@ -18,9 +18,9 @@ import urllib
 connection_uri = urllib.parse.quote_plus(connection_string)
 engine = create_engine(f"mssql+pyodbc:///?odbc_connect={connection_uri}")
 
-model = joblib.load('modelo/modelo_sentimento.joblib')
-vectorizer = joblib.load('modelo/vectorizer.joblib')
-label_map = joblib.load('modelo/label_map.joblib')
+model = joblib.load('ModeloTreinado/modelo_sentimento.joblib')
+vectorizer = joblib.load('ModeloTreinado/vectorizer.joblib')
+label_map = joblib.load('ModeloTreinado/label_map.joblib')
 inv_label_map = {v: k for k, v in label_map.items()} 
 
 query_null = """

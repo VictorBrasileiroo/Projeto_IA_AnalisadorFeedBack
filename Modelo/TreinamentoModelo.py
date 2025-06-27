@@ -39,8 +39,8 @@ y_train = df_train['Sentimento'].map(label_map)
 model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
 
-joblib.dump(model, 'modelo/modelo_sentimento.joblib')
-joblib.dump(vectorizer, 'modelo/vectorizer.joblib')
-joblib.dump(label_map, 'modelo/label_map.joblib')
+joblib.dump(model, 'ModeloTreinado/modelo_sentimento.joblib')
+joblib.dump(vectorizer, 'ModeloTreinado/vectorizer.joblib')
+joblib.dump(label_map, 'ModeloTreinado/label_map.joblib')
 
 print("Modelo treinado e exportado!")
