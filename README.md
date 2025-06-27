@@ -41,6 +41,14 @@ Conta com um sistema inteligente que re-treina o modelo e atualiza os dados peri
 
 ---
 
+## 💬 Como os modelos utilizados funcionam?
+1. Pré-processamento dos Comentários: Utiliza o TfidfVectorizer para transformar os textos dos comentários em vetores numéricos, baseando-se na frequência e relevância das palavras no conjunto de dados.  
+2. Treinamento Supervisionado: Um classificador Logistic Regression é treinado com dados previamente rotulados. Cada comentário possui um sentimento associado, permitindo que o modelo aprenda os padrões linguísticos de cada classe.
+3. Mapeamento e Predição: Ao receber um novo comentário, ele passa pela mesma vetorização. O modelo então prevê a classe mais provável, retornando o sentimento correspondente ao texto inserido.
+4. Atualização Automática: Comentários sem rótulo são identificados, classificados automaticamente pelo modelo, e têm seu sentimento atualizado diretamente no banco de dados. Além disso, o modelo pode ser re-treinado periodicamente com os novos dados, mantendo a IA sempre atualizada.
+
+---
+
 ## 🗂 Estrutura do Projeto
 
 ```bash
